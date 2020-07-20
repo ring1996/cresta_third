@@ -1,0 +1,64 @@
+// fonts
+$font-jp: 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-en: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size: 1.6rem;
+$font-weight: 400;
+$line-height-ttl: 1.5;
+$line-height-txt: 2;
+$letter-spacing-txt: 0;
+$letter-spacing-ttl: 0.068em;
+
+
+// Basic colors
+$color-txt-black:#333;
+$color-txt-gray: #cecece;
+$color-txt-white: #fff;
+
+$color-bg-white: #fff;
+$color-bg-black1: #222;
+$color-bg-black2: #000;
+$color-bg-gray1: #f0f0f0;
+$color-bg-gray2: #525252;
+
+$color-other-gray: #ddd;
+
+
+// Parts colors
+// header
+$color-txt-header: $color-txt-white;
+$color-bg-header: $color-bg-black1;
+// footer
+$color-txt-footer: $color-txt-white;
+$color-bg-footer: $color-bg-gray2;
+// btn
+$color-txt-btn: $color-txt-white;
+$color-bg-btn: $color-bg-black2;
+// border
+$color-bg-border: $color-other-gray;
+
+
+// breakpoints
+$breakpoints: (
+	'xxs': '375px',
+	'xs': '576px',
+	'sm': '768px',
+	'md': '1024px',
+	'lg': '1280px',
+	'xl': '1920px'
+) !default;
+
+@mixin media($type, $bp1, $bp2:0) {
+	@if ($type == min) {
+		@media screen and (min-width: #{map-get($breakpoints, $bp1)}) {
+			@content;
+		}
+	} @else if ($type == max) {
+		@media screen and (max-width: #{map-get($breakpoints, $bp1)}) {
+			@content;
+		}
+	} @else if ($type == between) {
+		@media screen and (min-width: #{map-get($breakpoints, $bp1)}) and (max-width: #{map-get($breakpoints, $bp2)}) {
+			@content;
+		}
+	}
+}
