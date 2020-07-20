@@ -552,6 +552,17 @@ h6 {
 ** Object
 ==================================================*/
 /* Component */
+.c-button {
+  display: block;
+  width: 160px;
+  padding: 6px;
+  background-color: #000;
+  font-size: 1.2rem;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
 /* Project */
 /* Utility */
 /*# sourceMappingURL=style.css.map */
