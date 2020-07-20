@@ -563,6 +563,14 @@ h6 {
   text-align: center;
 }
 
+.c-copyright {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1rem;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
 /* Project */
 /* Utility */
 /*# sourceMappingURL=style.css.map */
