@@ -1,0 +1,11 @@
+.u-wrap {
+  padding: 0 4%;
+}
+
+@include media(min, wrap) {
+  .u-wrap {
+    padding: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+  } // u-wrap
+} // media(wrap, wrap)

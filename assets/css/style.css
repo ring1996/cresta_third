@@ -580,6 +580,18 @@ h6 {
 
 /* Project */
 /* Utility */
+.u-wrap {
+  padding: 0 4%;
+}
+
+@media screen and (min-width: 1188px) {
+  .u-wrap {
+    padding: 0;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
 .u-mt--middle {
   margin-top: 30px;
 }

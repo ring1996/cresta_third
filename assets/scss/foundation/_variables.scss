@@ -44,7 +44,8 @@ $breakpoints: (
 	'sm': '768px',
 	'md': '1024px',
 	'lg': '1280px',
-	'xl': '1920px'
+	'xl': '1920px',
+	'wrap': '1188px' // calc(1100 + (1100*4%)*2)px
 ) !default;
 
 @mixin media($type, $bp1, $bp2:0) {
