@@ -559,6 +559,7 @@ h6 {
   background-color: #000;
   font-size: 1.2rem;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   color: #fff;
   text-align: center;
 }
@@ -572,13 +573,37 @@ h6 {
 }
 
 .c-section-ttl {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 /* Project */
+.p-about .u-wrap {
+  padding: 0;
+}
+
+.p-about__container {
+  background-image: url(/assets/images/top/about_img01.png);
+  padding: 50px 0;
+}
+
+.p-about__inner {
+  background-color: #fff;
+  margin: 0 4%;
+  padding: 50px 15px 50px 30px;
+  max-width: 590px;
+}
+
+.p-about__inner__txt {
+  font-size: 1.4rem;
+}
+
+.p-sec-block {
+  margin: 40px 0;
+}
+
 /* Utility */
 .u-wrap {
   padding: 0 4%;
