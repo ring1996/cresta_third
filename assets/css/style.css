@@ -552,6 +552,11 @@ h6 {
   background-color: #f0f0f0;
 }
 
+.l-footer {
+  background-color: #525252;
+  padding: 15px 0;
+}
+
 /*==================================================
 ** Object
 ==================================================*/
@@ -570,7 +575,6 @@ h6 {
 
 .c-copyright {
   text-align: center;
-  padding: 15px 0;
   font-size: 1rem;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
