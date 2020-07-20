@@ -516,6 +516,10 @@ template {
   src: url("/assets/fonts/Montserrat/ExtraBold/Montserrat-ExtraBold.woff2") format("woff2"), url("/assets/fonts/Montserrat/ExtraBold/Montserrat-Medium.woff") format("woff"), url("/assets/fonts/Montserrat/ExtraBold/Montserrat-Medium.eot") format("eot");
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   color: #333;
   font-size: 1.6rem;
