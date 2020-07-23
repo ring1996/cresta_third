@@ -556,6 +556,8 @@ h6 {
 
 .is-active-header .l-header {
   background-color: #000;
+  -webkit-transition: background-color ease-out .3s;
+  transition: background-color ease-out .3s;
 }
 
 .l-box {

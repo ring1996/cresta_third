@@ -4,5 +4,6 @@
   z-index: 1000;
   .is-active-header & {
     background-color: $color-bg-black2;
+    transition: background-color ease-out .3s;
   }
 }

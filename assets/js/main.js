@@ -20,27 +20,6 @@ jQuery(function ($) {
 });
 
 /*==================================================
-** SP Menu
-==================================================*/
-jQuery(function ($) {
-  var gnav = $('#js-nav'),
-    menuBtn = $('#js-btn'),
-    body = $(document.body),
-    classToAssignGnav = 'is-active-gnav';
-
-  function toggleGnav() {
-    if(body.hasClass(classToAssignGnav)) {
-      gnav.fadeOut(200);
-      body.removeClass(classToAssignGnav);
-    } else {
-      gnav.fadeIn();
-      body.addClass(classToAssignGnav);
-    }
-  }
-  menuBtn.on('click', toggleGnav);
-});
-
-/*==================================================
 ** headerChange
 ==================================================*/
 (function() {
@@ -54,10 +33,6 @@ jQuery(function ($) {
 
   function headerChange() {
     let scrollHeight = window.pageYOffset;
-    console.log('----------');
-    console.log(mvHeight);
-    console.log(scrollHeight);
-
     if (mvHeight <= scrollHeight) {
       body.classList.add(classToAssignHeader);
     } else {
@@ -70,12 +45,3 @@ jQuery(function ($) {
   window.addEventListener('scroll', headerChange);
   window.addEventListener('load', headerChange);
 })();
-
-
-/*==================================================
-** SP Menu
-==================================================*/
-(function() {
-  const body = document.querySelector('body');
-})();
-
