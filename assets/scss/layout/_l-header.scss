@@ -2,4 +2,7 @@
   width: 100%;
   position: fixed;
   z-index: 1000;
+  .is-active-header & {
+    background-color: $color-bg-black2;
+  }
 }

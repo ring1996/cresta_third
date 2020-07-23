@@ -37,11 +37,11 @@
 </head>
 <body>
   <header class="l-header">
-    <div class="p-header is-active">
+    <div class="p-header">
       <p class="p-header__logo">
         <img src="/assets/images/common/logo_normal.svg" alt="DIGSMILEのロゴ画像">
       </p>
-      <nav class="p-header__nav">
+      <nav id="js-nav" class="p-header__nav">
         <ul class="p-header__list">
           <li class="p-header__item--logo"><a href="#"><img src="/assets/images/common/logo_small.svg" alt="Top"></a></li>
           <li class="p-header__item u-english"><a href="#">About Us</a></li>
@@ -51,7 +51,7 @@
           <li class="p-header__item u-english"><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <button class="p-header__btn">
+      <button id="js-btn" class="p-header__btn">
         <span class="p-header__btn__bar"></span>
         <span class="p-header__btn__txt u-english">Menu</span>
       </button>
@@ -92,24 +92,26 @@
     <div class="l-box">
       <div class="u-wrap">
         <!-- p-sec-block -->
-        <section class="p-sec-block">
-          <h2 class="p-sec-block__ttl c-section-ttl">Works</h2>
-          <figure class="p-sec-block__image u-mt--middle">
-            <img src="/assets/images/top/works_img01.png" alt="DIGSMILEの制作実績のイメージ画像">
-          </figure>
-          <p class="p-sec-block__txt u-mt--middle">DIGSMILEの制作実績を紹介します。</p>
-          <a href="#" class="c-button u-mt--middle">Read More</a>
-        </section><!-- /p-sec-block -->
+        <div class="p-sec-block">
+          <section class="p-sec-block__item">
+            <h2 class="p-sec-block__ttl c-section-ttl">Works</h2>
+            <figure class="p-sec-block__image u-mt--middle">
+              <img src="/assets/images/top/works_img01.png" alt="DIGSMILEの制作実績のイメージ画像">
+            </figure>
+            <p class="p-sec-block__txt u-mt--middle">DIGSMILEの制作実績を紹介します。</p>
+            <a href="#" class="c-button u-mt--middle">Read More</a>
+          </section><!-- /p-sec-block -->
 
-        <!-- p-sec-block -->
-        <section class="p-sec-block">
-          <h2 class="p-sec-block__ttl c-section-ttl">Culture</h2>
-          <figure class="p-sec-block__image u-mt--middle">
-            <img src="/assets/images/top/culture_img01.png" alt="DIGSMILEの社内文化のイメージ画像">
-          </figure>
-          <p class="p-sec-block__txt u-mt--middle">DIGSMILEの社内文化について紹介します。</p>
-          <a href="#" class="c-button u-mt--middle">Read More</a>
-        </section><!-- /p-sec-block -->
+          <!-- p-sec-block -->
+          <section class="p-sec-block__item">
+            <h2 class="p-sec-block__ttl c-section-ttl">Culture</h2>
+            <figure class="p-sec-block__image u-mt--middle">
+              <img src="/assets/images/top/culture_img01.png" alt="DIGSMILEの社内文化のイメージ画像">
+            </figure>
+            <p class="p-sec-block__txt u-mt--middle">DIGSMILEの社内文化について紹介します。</p>
+            <a href="#" class="c-button u-mt--middle">Read More</a>
+          </section><!-- /p-sec-block -->
+        </div>
       </div>
     </div>
 
@@ -119,19 +121,25 @@
         <h2 class="p-topics__ttl c-section-ttl">Latest Topics</h2>
         <ul class="p-topics__list u-mt--middle">
           <li class="p-topics__item">
-            <time class="p-topics__item__date">2020.02.01</time>
-            <p class="p-topics__item__ttl">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</p>
+            <a href="#" class="p-topics__item__btn">
+              <time class="p-topics__item__date">2020.02.01</time>
+              <p class="p-topics__item__ttl">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</p>
+            </a>
           </li>
           <li class="p-topics__item">
-            <time class="p-topics__item__date">2020.01.18</time>
-            <p class="p-topics__item__ttl">プレスリリースのお知らせ DIGGIN’ RECORDS</p>
+            <a href="#" class="p-topics__item__btn">
+              <time class="p-topics__item__date">2020.01.18</time>
+              <p class="p-topics__item__ttl">プレスリリースのお知らせ DIGGIN’ RECORDS</p>
+            </a>
           </li>
           <li class="p-topics__item">
-            <time class="p-topics__item__date">2020.01.01</time>
-            <p class="p-topics__item__ttl">新年明けましておめでとうございます</p>
+            <a href="#" class="p-topics__item__btn">
+              <time class="p-topics__item__date">2020.01.01</time>
+              <p class="p-topics__item__ttl">新年明けましておめでとうございます</p>
+            </a>
           </li>
         </ul>
-        <a href="#" class="c-button u-mt--middle">Read More</a>
+        <a href="#" class="p-topics__button c-button u-mt--middle">Read More</a>
       </div>
     </section><!-- /p-topics -->
 
@@ -159,5 +167,9 @@
   <footer class="l-footer">
     <p class="c-copyright"><small>&copy;2018 DIGSMILE INC.</small></p>
   </footer><!-- /footer -->
+
+  <!-- js -->
+  <script src="/assets/js/jQuery-3.4.1.min.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

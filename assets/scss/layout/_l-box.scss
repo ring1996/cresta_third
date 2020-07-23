@@ -1,3 +1,9 @@
 .l-box {
   background-color: $color-bg-gray1;
 }
+
+@include media(min, md) {
+  .l-box {
+    padding-top: 100px;
+  }
+} // media(min, md)

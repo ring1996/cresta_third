@@ -1,6 +1,22 @@
 .p-sec-block {
-  padding-top: 40px;
-  &:last-of-type {
-    padding-bottom: 40px;
+  &__item {
+    max-width: 520px;
+    padding-top: 40px;
+    &:last-of-type {
+      padding-bottom: 40px;
+    }
   }
 }
+
+@include media(min, md) {
+  .p-sec-block {
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      margin-right: 60px;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+} // media(min, md)

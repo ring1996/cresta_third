@@ -1,8 +1,12 @@
 .p-topics {
   padding: 40px 0;
   &__item {
-    padding-bottom: 10px;
     border-bottom: 1px solid $color-bg-border;
+    &__btn {
+      display: block;
+      padding-bottom: 10px;
+      @include hover-action;
+    }
     &__date {
       font-size: 1rem;
       font-weight: 700;
@@ -18,3 +22,30 @@
     }
   }
 }
+
+@include media(min, md) {
+  .p-topics {
+    &__item {
+      &__btn {
+        padding-bottom: 12px;
+      }
+      &__ttl {
+        font-size: 1.4rem;
+        margin-top: 12px;
+      }
+    }
+  }
+} // media(min, md)
+
+@include media(min, md) {
+  .p-topics {
+    padding: 60px 0;
+    &__list {
+      width: 700px;
+      margin-left: auto;
+    }
+    &__button {
+      margin-left: auto;
+    }
+  }
+} // media(min, md)

@@ -8,4 +8,5 @@
   font-weight: 700;
   color: $color-txt-btn;
   text-align: center;
+  @include hover-action;
 }

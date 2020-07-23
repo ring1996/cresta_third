@@ -4,3 +4,9 @@
   font-weight: 800;
   text-transform: uppercase;
 }
+
+@include media(min, sm) {
+  .c-section-ttl {
+    font-size: 3.2rem;
+  }
+} // media(min, sm)

@@ -53,3 +53,20 @@
     }
   }
 }
+
+@include media(min, md) {
+  .p-main-visual {
+    &__back-ground {
+      width: 50%;
+    }
+    &__inner {
+      right: -15%;
+      &__ttl {
+        font-size: 7.2rem;
+      }
+      &__txt {
+        font-size: 2rem;
+      }
+    }
+  }
+} // media(min, md)
