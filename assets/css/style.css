@@ -735,6 +735,14 @@ h6 {
   height: 2px;
   border-radius: 4px;
   background-color: #fff;
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: ease-out;
+          transition-delay: ease-out;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
   position: relative;
 }
 

@@ -68,6 +68,9 @@
       height: 2px;
       border-radius: 4px;
       background-color: #fff;
+      transition-property: top, transform;
+      transition-delay: ease-out;
+      transition-duration: .3s;
       position: relative;
       &::before {
         content: '';
